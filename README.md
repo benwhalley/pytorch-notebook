@@ -9,7 +9,7 @@ This docker image supports with jupyter, pytorch and cuda.
 docker run --rm -it  \
            -p 8888:8888  \
            -e JUPYTER_TOKEN=passwd  \
-           tverous/pytorch-notebook:latest
+           benwhalley/pytorch-notebook:latest
 ```
 
 ### Start the container with GPUs support:
@@ -18,7 +18,7 @@ docker run --rm -it  \
            --gpus all  \
            -p 8888:8888  \
            -e JUPYTER_TOKEN=passwd  \
-           tverous/pytorch-notebook:latest
+           benwhalley/pytorch-notebook:latest
 ```
 
 ### Start the container with volumes:
@@ -28,7 +28,7 @@ docker run --rm -it  \
            -p 8888:8888  \
            -e JUPYTER_TOKEN=passwd \
            -v /local_vol:/docker_vol  \
-           tverous/pytorch-notebook:latest
+           benwhalley/pytorch-notebook:latest
 ```
 
 ## Launch Jupyter Notebook
